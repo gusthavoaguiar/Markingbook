@@ -1,0 +1,31 @@
+section {
+  background-color: #f2f2f2;
+  width: 13vw;
+  height: 83vh;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.notice {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.notice img {
+  width: 6rem;
+}
+
+p {
+  font-family: Inter;
+  text-align: center;
+  width: 10rem;
+  color: #6f6f6f;
+}
+
+h4 {
+  font-family: Inter;
+}

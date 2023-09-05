@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main {
+  display: flex;
+  align-items: center;
+}
+
+app-main {
+  margin: auto;
+  text-align: center  ;
+}
+
+app-main p {
+  font-family: Inter;
+  color: #6f6f6f;
+  font-size: 2rem;
+}
+
+app-main img {
+  width: 8rem;
+  height: 8rem;
+}
+
+app-create-note {
+  margin: auto;
+}

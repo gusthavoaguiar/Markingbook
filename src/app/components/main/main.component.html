@@ -1,0 +1,12 @@
+<ng-template #noNotas>
+  <section class="notice">
+    <img src="../../../assets/images/bookmark-icon.svg" alt="">
+    <p>Suas notas serão exibidas aqui.</p>
+  </section>
+</ng-template>
+
+<div class="notesBox" *ngIf="noteList.length > 0, else noNotas">
+  <div *ngFor="let nota of noteList">
+      <app-note [note]="nota"></app-note>
+  </div>
+</div>
