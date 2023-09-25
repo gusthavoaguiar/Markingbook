@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent {
-  noteList: note[] = [
+  noteList = [
     {
       id: 0,
       title: "forte abraço",
