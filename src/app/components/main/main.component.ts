@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NoteService } from '../note.service';
 
 @Component({
   selector: 'app-main',
@@ -6,6 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent {
+  constructor(private service: NoteService) { }
+  ngOnInit(): void {
+    this.service.list()
+  }
   noteList = [
     {
       id: 0,
