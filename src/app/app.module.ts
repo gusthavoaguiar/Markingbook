@@ -9,6 +9,7 @@ import { MainComponent } from './components/main/main.component';
 import { CreateNoteComponent } from './components/create-note/create-note.component';
 import { NoteComponent } from './components/note/note.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

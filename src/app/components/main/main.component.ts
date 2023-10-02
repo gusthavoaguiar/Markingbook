@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NoteService } from '../note.service';
+import { Note } from '../note';
 
 @Component({
   selector: 'app-main',
@@ -9,14 +10,10 @@ import { NoteService } from '../note.service';
 export class MainComponent {
   constructor(private service: NoteService) { }
   ngOnInit(): void {
-    this.service.list()
+    this.service.list().subscribe((noteList) => {
+      this.noteList = noteList
+    })
   }
-  noteList = [
-    {
-      id: 0,
-      title: "forte abraço",
-      content: "AI CALICA",
-      type: "type2"
-    }
-  ];
+
+  noteList: Note[] = [];
 }
