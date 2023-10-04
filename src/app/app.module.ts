@@ -10,6 +10,7 @@ import { CreateNoteComponent } from './components/create-note/create-note.compon
 import { NoteComponent } from './components/note/note.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { DeleteNoteComponent } from './components/delete-note/delete-note.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FormsModule } from '@angular/forms';
     SidebarComponent,
     MainComponent,
     CreateNoteComponent,
-    NoteComponent
+    NoteComponent,
+    DeleteNoteComponent
   ],
   imports: [
     BrowserModule,

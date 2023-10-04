@@ -11,9 +11,16 @@ import { Router } from '@angular/router';
 export class CreateNoteComponent {
   constructor( private service: NoteService, private router: Router ){}
 
-  criarNota(){
-    this.service.criar(this.note).subscribe()
+  createNote(){
+    this.service.create(this.note).subscribe(() =>{
+      this.router.navigate(['/home'])
+    })
   }
+
+  cancelNote(){
+    this.router.navigate(['/home'])
+  }
+
 
   note: Note= {
     title: '',

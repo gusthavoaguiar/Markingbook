@@ -13,8 +13,16 @@ export class NoteService {
   list(): Observable<Note[]> {
     return this.http.get<Note[]>(this.API)
   }
-  criar(nota: Note): Observable<Note>{
+  create(nota: Note): Observable<Note>{
     return this.http.post<Note>(this.API, nota)
+  }
+  getNoteId(id: number): Observable<Note> {
+    const url = `${this.API}/${id}`
+    return this.http.get<Note>(url)
+  }
+  delete(id: number): Observable<Note> {
+    const url = `${this.API}/${id}`
+    return this.http.delete<Note>(url)
   }
 
 }

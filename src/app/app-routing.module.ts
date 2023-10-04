@@ -1,3 +1,4 @@
+import { DeleteNoteComponent } from './components/delete-note/delete-note.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LittlesidebarComponent } from './components/littlesidebar/littlesidebar.component';
@@ -17,7 +18,12 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch:'full'
+  },
+  {
+    path: 'delete-note/:id',
+    component: DeleteNoteComponent
   }
+
 ];
 
 @NgModule({
